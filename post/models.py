@@ -5,7 +5,7 @@ class Post(models.Model):
     titile=models.CharField(max_length=50)
     content=models.TextField(max_length=1000)
     created_at=models.DateField(default=timezone.now)
-    models.ImageField(upload_to='post-img/')
+    img=models.ImageField(upload_to='post-img/',null=True)
 
     
 
