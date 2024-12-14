@@ -6,6 +6,8 @@ class Post(models.Model):
     content=models.TextField(max_length=1000)
     created_at=models.DateField(default=timezone.now)
     img=models.ImageField(upload_to='post-img/',null=True)
+    active=models.BooleanField(default=False)
+    
 
     
 
